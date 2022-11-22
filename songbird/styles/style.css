@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+:root{box-sizing: border-box;
+    font-family:Roboto;
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+    *,
+    ::before,
+    ::after{box-sizing: inherit;}
+    
+    .main-container{
+        /*max-width: 95%;*/
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 50fr 200fr 200fr 200fr 50fr 1fr;
+        grid-template-rows: 50fr 20fr 200fr 50fr 100fr 100fr 200fr 1fr;
+        /*background-color: black;*/
+        /*max-width: 100vmax;
+        min-height: 100%;*/
+        background-size:cover;
+        background-position:center;
+        background-image: url("../images/pticy-krylya-hvost-cvety-lug.jpg");
+        background-repeat: no-repeat;
+       
+    }
+
+    .main-container__heder{
+      display: flex;
+      grid-column: 1/8;
+      grid-row: 1/3;
+      flex-direction: row;
+      vertical-align: middle;
+      /*display: grid;
+      grid-template-columns: 70px repeat(19, 5vw);
+      grid-template-rows: repeat(10, 5vw) ;  */
+    }
+    .main-container__heder_logo{
+        display: flex;
+       grid-column: 2/4;
+      grid-row: 1/2;
+     margin-top: 1vw;
+      margin-bottom: 0;
+      margin-left:0;
+      
+       /* position: relative;*/
+    }
+    .logoWhite{
+      font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      display: inline-block;
+      
+       font-size: 10vmin;
+       font-weight: 400;
+       line-height: 22px;
+       letter-spacing: 0em;
+       text-align: left;
+       text-decoration: none;
+       color:yellow;
+       text-align: left;
+       margin: auto;
+    }
+
+    .logoGreen{
+        font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+       display: inline-block;
+         font-size: 10vmin;
+         font-weight: 400;
+         line-height: 22px;
+         letter-spacing: 0em;
+         text-align: left;
+         text-decoration: none;
+         color:fuchsia;
+         position: relative;
+         margin-left: -10px;
+         text-align: left;
+        
+         margin:auto;
+      }
+
+      @media screen and (max-width: 820px ){
+        .logoWhite,
+        .logoGreen{
+          font-size: 8vmin;
+        }
+
+      }
+
+      .song-header{
+        cursor: pointer;
+        /*grid-column: 15/16;
+        grid-row: 1/3;*/
+        /*margin: auto;*/
+        margin-left: auto;
+        /*margin-right: 10vw;*/
+      position: relative;
+      
+    }
+    .song-header-img{
+      image-rendering: optimizeQuality;
+      
+    }
+
+    .song-header:hover{
+
+      top: 10px;
+      left: -10px;
+
+    }
+    .main-container__butholder{
+        grid-column: 2/7;
+        grid-row: 6/7;
+        display: flex;
+       justify-content:space-around;
+       width: 100vw;
+    }
+
+
+
+
+    .main-container__butholder_begin,
+    .main-container__butholder_education{
+      
+      /*width: 10vw;
+      height: 10vh;*/
+      
+      font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      display: inline-block;
+      font-size: 60px;
+      font-weight: 400;
+      /*line-height: 22px;*/
+      letter-spacing: 0em;
+      text-align:center;
+      text-decoration: none;
+      color: #c58435;
+      /*height: 20px;
+      width: 40vw;*/
+      /*padding-top:3%;*/
+      padding-left: 1vw;
+      padding-right: 1vw;
+      /*padding-bottom:auto;*/
+      justify-content:space-around;
+      width: 50vw;
+      height: 30px;
+    }
+
+    @media screen and (max-width: 820px ){
+      .main-container__butholder_begin,
+      .main-container__butholder_education{
+        font-size: 40px;
+        font-weight: 400;
+        width: 80%;
+      }
+    }
+
+   @media screen and (max-width: 620px ){
+      .main-container__butholder_begin,
+      .main-container__butholder_education{
+        font-size: 30px;
+        font-weight: 400;
+        width: 80%;
+      }
+    }
+    @media screen and (max-width: 530px ){
+      .main-container__butholder_begin,
+      .main-container__butholder_education{
+        font-size: 30px;
+        font-weight: 400;
+        width: 80%;
+        margin-bottom: 10vh;
+      }
+      .main-container__butholder{
+        
+        display: flex;
+        flex-direction: column;
+       justify-content:space-around;
+       width: 100vw;
+
+    }
+  }
+    .butholder-butbegin_p1,
+    .butholder-education_p1{
+      /*position: relative*/
+     border: 1vh solid ;
+      text-decoration: none;
+      /*margin: auto;*/
+      color: #122613;
+      background-image: linear-gradient( 45deg,  white,#0a470e);
+      border-radius: 25%;
+      /*border-bottom-left-radius:10% ;
+      border-bottom-right-radius: 10%;
+      border-top-left-radius: 25%;
+      border-top-right-radius: 25%;*/
+      border-color: #0a470e;
+      font-size: 98%;
+      margin: 0px 30px 0px 30px;
+      width: 40vw;
+      height: 20vh;
+      overflow: hidden;
+    }
+    .butholder-butbegin_p1{
+      padding-left: 1em;
+      padding-right: 1em;
+      
+    }
+
+    .butholder-butbegin_p1:hover{
+      background-image: linear-gradient( 45deg,#0a470e,white);
+    }
+    .butholder-education_p1:hover{
+      background-image: linear-gradient( 45deg,#0a470e,white);
+    }
+
+
+    /*=================================== second page======================================*/
+
+    
+
+    .main-batley-container{
+      /*max-width: 95%;*/
+      margin: 0;
+      /*width: 100vw;*/
+      /*height: 100vh;*/
+      display: grid;
+      grid-template-columns: 10% 40% 40% 10%;
+      grid-template-rows:repeat(4, 5%) 20px repeat(12, 5%);
+      /*grid-template-columns: 1fr 50px 200px 200px 200px 50px 1fr;
+      grid-template-rows: 50px 20px 200px 50fr 100fr 100fr 200fr 1fr;*/
+      /*background-color: black;*/
+      /*max-width: 100vmax;
+      min-height: 100%;*/
+      background-size:cover;
+      background-position:center;
+      /*background-image: url("../images/pticy-krylya-hvost-cvety-lug.jpg");*/
+      background-repeat: no-repeat;
+     background-color: gray;
+  }
+  .batley-header{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns:5% 5% 25% 25% 25% 5% 5%;
+    grid-template-rows:  12vh 20px 2vh 40px 10px 5vh 5vh repeat(4, 5vh)  10px repeat(6,5vh) 10px 10px 5vh;/* 4vh;*/
+    margin: 0px;
+    position: relative;
+    background-color: gray;
+    
+  }
+  .batley-header__logo{
+    display: block;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-self: start;
+    margin-left: 5vw;
+    margin-top: 30%;
+
+  }
+  .batley-header-scores{
+    display: flex;
+    grid-column: 4/7;
+    grid-row: 1/2;
+
+    font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      display: inline-block;
+      font-size: 3vw;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align:center;
+      text-decoration: none;
+      color: white;
+      /*grid-column: 5/7;
+      grid-row: 1/2;*/
+      /*margin-top: 30px;
+      margin: 0px;*/
+  }
+
+  .logo-white{
+    font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+    display: inline-block;
+   
+     font-size: 5vw;
+     font-weight: 400;
+     line-height: 22px;
+     letter-spacing: 0em;
+     text-align: left;
+     text-decoration: none;
+     color:white;
+     text-align: left;
+     margin: 0px;
+     padding: 0px;
+
+  }
+
+  .logo-green{
+      font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+     display: inline-block;
+       font-size: 5vw;
+       font-weight: 400;
+       line-height: 22px;
+       letter-spacing: 0em;
+       text-align: left;
+       text-decoration: none;
+       color:#0a470e;
+       position: relative;
+       margin-left: -10px;
+       text-align: left;
+     /*float: left;*/
+       margin:0px;
+    }
+
+    .main-batley-nav{
+      grid-column: 1/8;
+      grid-row: 4/5;
+      display: flex;
+      margin-left: 4vw;
+      /*padding-left: 1fr;/*
+     /* justify-content: space-between;*/
+     
+
+
+    }
+
+    .main-batley-nav__but{
+      width: 20vw;
+      font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      display: inline-block;
+      font-size: 1.5vw;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      background-color: rgb(10, 71, 14);
+      color: antiquewhite;
+      padding: 0px;
+      position: relative;
+    }
+
+    #razminka{
+
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+
+    }
+
+    #sea{
+
+      border-bottom-right-radius: 10px;
+      border-top-right-radius:10px ;
+
+    }
+
+
+
+
+    @media screen and (max-width: 820px ){
+      .main-batley-nav__but{
+        font-size: 2vw;
+        
+      }
+    }
+
+    @media screen and (max-width: 640px ){
+      .main-batley-nav__but{
+        font-size: 2.5vw;
+        border: 1px solid #122613;
+      }
+    }
+    @media screen and (max-width: 400px ){
+      .main-batley-nav__but{
+        font-size: 3vw;
+        border: 1px solid rgb(18, 38, 19);
+        
+      }
+    }
+
+
+    .main-batley-nav__but:hover{
+      cursor:pointer;
+      /*background-color: rgb(49, 138, 55);*/
+      color: white;
+
+    }
+
+    .main-batley-nav__but:active{
+      cursor:pointer;
+      /*background-color: #318a37;*/
+      color: blue;
+    }
+    .batley-field{
+      display: grid;
+      grid-template-columns: repeat(20, 5%);
+      grid-template-rows:10px repeat(8,10%) 10px;
+      /*width: 86vw;
+      height: 40vh;*/
+      grid-row:6/12;
+      grid-column: 1/8;
+      border:2px solid #0a470e;
+      background-color: #9b9a99;
+      margin-left:4vw ;
+      /*margin-right: 5vw;*/
+      
+    }
+
+    #foto-in-action{
+
+      grid-column: 2/8;
+      grid-row: 2/11;
+      /*border: 1px solid #0a470e;*/
+      /*overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;*/
+        background-size:contain;
+        background-position:center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    /*.foto-in-action img {
+      
+    }*/
+
+    #audio-in-action{
+      grid-column: 9/20;
+      grid-row: 2/11;
+      border: 1px solid #0a470e;
+      display: grid;
+      grid-template-columns: repeat(20, 5%);
+      grid-template-rows: repeat(20, 5%);
+    }
+/*================================ player ======================================================*/
+  #play-contr-top{
+    grid-column: 2/5;
+    grid-row: 13/20;
+    /*background-color: #c58435;*/
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+
+  }
+
+  #play-contr-top{
+
+    cursor: pointer;
+
+  }
+  #play-length-top{
+    grid-column: 1/19;
+    grid-row: 1/13;
+    font-family: 'Pacifico', cursive;
+    font-size: 5vw;
+      font-weight: 400;
+      /*line-height: 22px;*/
+      letter-spacing: 0em;
+      text-align:center;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-decoration: none;
+      color:#0a470e;
+  }
+
+  #play-vol-plus{
+position: relative;
+    grid-column: 17/20;
+    grid-row: 13/20;
+    /*background-color: #c58435;*/
+   /* font-family: 'Pacifico', cursive;*/
+   /* font-size: 3vw;*/
+    /*  font-weight: 400;*/
+      /*line-height: 22px;*/
+    /*  letter-spacing: 0em;
+      text-align:center;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-decoration: none;
+      color:#0a470e;
+      border: 1vh solid #0a470e;*/
+      background-image: url("../images/vol-plus.png");
+      background-size:contain;
+      background-position:center;
+      background-repeat: no-repeat;
+    z-index: 3;
+
+  }
+
+  #play-vol-plus:hover {
+    cursor: pointer;
+  }
+
+
+
+  #play-vol-minus{
+    grid-column: 6/9;
+    grid-row: 13/20;
+    /*background-color: #c58435;*/
+   /* font-family: 'Pacifico', cursive;
+    font-size: 3vw;
+      font-weight: 400;
+      line-height: 22px;*/
+      /*letter-spacing: 0em;
+      text-align:center;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-decoration: none;
+      color:#0a470e;*/
+    /*background-color: #c58435;*/
+    /*border: 1vh solid #0a470e;*/
+    background-image: url("../images/vol-minus.png");
+      background-size:contain;
+      background-position:center;
+      background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  #play-vol-minus:hover {
+    cursor: pointer;
+  }
+
+  /*#play-vol-top{
+    grid-column: 10/16;
+    grid-row: 16/17;
+    background-color: #0a470e;
+  }*/
+
+
+
+/*================================== end of player==============================================*/
+    #batley-field-choice{
+
+      grid-row: 13/20;
+      grid-column: 1/8;
+      border:2px solid #0a470e;
+      margin-left:4vw ;
+      display: grid;
+      grid-template-columns: repeat(20, 5%);
+      grid-template-rows: repeat(10,10%);
+      background-color: #9b9a99;
+    }
+
+    #field-choice-birds{
+      display: flex;
+      flex-direction: row;
+      justify-content:start;
+      grid-column: 2/10;
+      grid-row: 2/10;
+      border: 1px solid #0a470e;
+      background-color: #484848;
+      padding-bottom: 10px;
+      
+  }
+
+  #field-choice-description{
+
+    grid-column: 11/20;
+    grid-row: 2/10;
+    border: 1px solid #0a470e;
+    display: grid;
+      grid-template-columns: repeat(20, 5%);
+      grid-template-rows: repeat(10,10%);
+
+  }
+
+  .button-next{
+
+    grid-column: 1/8;
+    grid-row: 21/22;
+    border:2px solid #c58435;
+    margin-left:4vw ;
+    text-align: center;
+    
+    background-color: #0a470e;
+    border-radius: 10px;
+    color: white;
+
+    font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      font-size: 1vw;
+      font-weight: 400;
+     /* line-height: 22px;*/
+      letter-spacing: 0em;
+    
+    display: flex;
+    justify-content: center;
+     
+     /*padding-top: 1%;*/
+      color: antiquewhite;
+      
+      /*position: relative;*/
+  }
+
+   .button-next:hover{
+    background-color: #122613;
+    cursor: pointer;
+   } 
+   .button-next:active{
+
+    color: red;
+
+   }
+
+
+  .next-level__text{
+        margin-top:auto;
+        margin-bottom: auto;
+  }
+
+  .bird-list{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pacifico', cursive;/*  font-family: 'Oleo Script', cursive;*/
+      display: inline-block;
+      font-size: 3vh;
+      font-weight: 400;
+      /*line-height: 22px;*/
+      letter-spacing: 0em;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      
+      color: white;
+      padding: 0px;
+      position: relative;
+      margin-left: 15%;
+  }
+
+  .choisen-bird:hover  {
+
+    color:#0a470e;
+    cursor: pointer;
+    background-color: #929090;
+
+  }
+  #description-foto{
+
+    grid-column: 1/9;
+    grid-row: 1/6;
+   /* border: 1px solid red;*/
+    background-size:contain;
+    background-position:top;
+    background-repeat: no-repeat;
+    /*height: 100%;
+    width: 100%;*/
+  }
+
+  #description-name{
+
+    grid-column: 11/20;
+    grid-row: 1/3;
+    /*border-bottom: 1px solid #4b4a4a;*/
+    font-size: 2vw;
+  }
+
+  #description-latin{
+
+    grid-column: 11/20;
+    grid-row: 3/5;
+    /*border-bottom: 1px solid #4b4a4a;*/
+    font-size: 2vw;
+
+  }
+
+  #description-sound{
+
+    grid-column: 11/20;
+    grid-row: 5/7;
+    /*border: 1px solid red;*/
+
+  }
+
+  #description-des{
+    
+    grid-column: 1/21;
+    grid-row: 6/11;
+    /*border: 1px solid red;*/
+    font-size: 2.2vh;
+  }
+
+  @media screen and (max-width: 860px ){#description-des{font-size: 2vh;}}
+  @media screen and (max-width: 760px ){#description-des{font-size: 1.7vh;}}
+  @media screen and (max-width: 585px ){#description-des{font-size: 1.4vh;}}
+
+
+  #you-win{
+    display:none;
+    position:absolute;
+    width: 95vw;
+    height: 90vh;
+    background-color: white;
+    border: 10px solid skyblue;
+    border-image: linear-gradient(to left top, #0a470e, white, #0a470e);
+    border-image-slice: 1;
+    top: 10vh;
+    left: 2vw;
+    z-index: 3;
+  }
+  .win-but-repeat{
+    width: 50%;
+    height: 20%;
+    font-size: 10vh;
+    display: inline-block;
+    margin-top: 10%;
+  }
+
+  .win-but-begin{
+    width: 50%;
+    height: 20%;
+    font-size: 10vh;
+    display: inline-block;
+    margin-top: 10%;
+  }
+
+  .win-list{
+    display: flex;
+    flex-direction: row;
+  }
+  .win-but-cont{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Songbird">
+  <meta name="author" content="Andrey Scerbina @scerbina2016">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="..\songbird\styles\style.css">
+  <title>Song Batley</title>
+</head>
+<body>
+  
+    <section class="main-batley-container">
+     <header class="batley-header" id="batley-header-p2">
+        <div class="batley-header__logo" id="heder-logo-p1">
+            <p class="logo-white">SONG</p>
+            <p class="logo-green">BIRDS</p>
+          </div>
+        <div class="batley-header-scores" id="batley-scores">
+            <p class="batley-header-scores" id="batley-scores-text">Scores:</p>
+            <p class="batley-header-scores" id="batley-scores-value"></p>
+        </div>  
+        <nav class="main-batley-nav">
+            <button class="main-batley-nav__but" type="button" id="razminka">Разминка</button>
+            <button class="main-batley-nav__but" type="button" id="voroby">Воробъиные</button>
+            <button class="main-batley-nav__but" type="button" id="forest">Лесные птицы</button>
+            <button class="main-batley-nav__but" type="button" id="singing">Певчие птицы</button>
+            <button class="main-batley-nav__but" type="button" id="predator">Хищные птицы</button>
+            <button class="main-batley-nav__but" type="button" id="sea">Морские птицы</button>
+        </nav>
+        <section class="batley-field" id="batley-field-top">
+          <div class="foto-container" id="foto-in-action"></div>
+          <div class="audio-player" id="audio-in-action">
+            <div class="audio-player-control" id="play-contr-top"></div>
+            <div class="audio-player-volume" id="play-vol-top"></div>
+            <div class="audio-player-volume-control" id="play-vol-plus">
+             <!--<img src="../songbird/images/vol-plus2.png" alt="">-->
+            </div>
+            <div class="audio-player-volume-control" id="play-vol-minus"></div>
+            <div class="audio-player-length" id="play-length-top"></div>
+            <div class="audio-player-time" id="play-time-top"></div>
+          
+
+          </div>
+        </section>
+        <section class="batley-field-midl" id="batley-field-choice">
+          <div class="field-choice" id="field-choice-birds">
+
+            <ul class="bird-list"> 
+              <li class = "choisen-bird" id ="one-bird"></li>
+              <li class = "choisen-bird" id ="two-bird"></li>
+              <li class = "choisen-bird" id ="three-bird"></li>
+              <li class = "choisen-bird" id ="four-bird"></li>
+              <li class = "choisen-bird" id ="five-bird"></li>
+              <li class = "choisen-bird" id ="six-bird"></li>
+             </ul>
+
+
+
+          </div>
+          <div class="field-choice" id="field-choice-description">
+            <div class="fild-choise-descrittion__foto" id="description-foto"></div>
+            <div class="fild-choise-description__name" id="description-name"></div>
+            <div class="fild-choise-description__latin" id="description-latin"></div>
+            <div class="fild-choise-description__sound" id="description-sound"></div>
+            <div class="fild-choise-description__des" id="description-des"></div>
+            
+            
+          </div>
+        </section>
+        <section class="button-next" id="next-level">
+          <p class="next-level__text">Next level</p>
+        </section>
+       <section class="winner" id="you-win"></section>
+    </header>
+    
+
+    <footer class="batley-footer" id="batley-footre-p2">
+
+    </footer>
+
+
+    </section>
+  
+    
+
+
+
+    <script type="module" src="..\songbird\scripts\script-p2.js"></script>
+</body>
+</html>
